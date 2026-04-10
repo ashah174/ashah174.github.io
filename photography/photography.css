@@ -1,0 +1,178 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #f7f1f3, #ead4d8);
+    color: #2a1a1d;
+    line-height: 1.6;
+    padding: 30px;
+}
+
+/* HEADER */
+.hero {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 30px;
+    border-radius: 18px;
+    margin-bottom: 30px;
+    animation: fadeInDown 1.5s ease;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+}
+
+.hero h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+    color: #800020; /* burgundy */
+}
+
+.hero p {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 18px;
+}
+
+/* ABOUT SECTION (FLEX) */
+.about-section {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+.about-text {
+    flex: 1;
+    min-width: 280px;
+}
+
+.about-text h2 {
+    color: #6d0019;
+    font-size: 30px;
+}
+
+.featured-photo {
+    width: 100%;
+    max-width: 320px;
+    border-radius: 18px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
+    animation: floatPhoto 3s ease-in-out infinite alternate;
+}
+
+/* GALLERY (FLEX) */
+.gallery-section h2 {
+    text-align: center;
+    color: #6d0019;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.photo-gallery {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.photo-card {
+    background-color: rgba(255, 255, 255, 0.85);
+    border-radius: 16px;
+    padding: 18px;
+    width: 280px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.photo-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(128, 0, 32, 0.3);
+}
+
+.gallery-photo {
+    width: 100%;
+    height: 340px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 12px;
+}
+
+/* VIDEO */
+.video-section {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.video-section h2 {
+    color: #6d0019;
+    font-size: 30px;
+}
+
+.travel-video {
+    width: 420px;
+    max-width: 100%;
+    border-radius: 14px;
+    box-shadow: 0 6px 16px rgba(128, 0, 32, 0.3);
+    margin-top: 15px;
+}
+/* FORM */
+.form-section {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 25px;
+    border-radius: 18px;
+    box-shadow: 0 6px 18px rgba(128, 0, 32, 0.2);
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.form-section h2 {
+    text-align: center;
+    color: #6d0019;
+}
+
+.photo-form input[type="text"],
+.photo-form select {
+    width: 100%;
+    max-width: 420px;
+    padding: 10px;
+    margin-top: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #b98a92;
+    border-radius: 8px;
+}
+
+/* BUTTON */
+.submit-button {
+    background-color: #800020;
+    color: white;
+    border: none;
+    padding: 12px 22px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.submit-button:hover {
+    background-color: #5c0016;
+    transform: scale(1.05);
+}
+
+/* ANIMATIONS */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-18px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes floatPhoto {
+    from {
+        transform: translateY(0px);
+    }
+    to {
+        transform: translateY(-10px);
+    }
+}
