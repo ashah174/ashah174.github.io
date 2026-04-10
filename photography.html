@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Travel Photography</title>
+    <link rel="stylesheet" href="photography.css" />
+</head>
+<body>
+    <header class="hero">
+        <h1>Travel Photography</h1>
+        <p>
+            This summer, I studied abroad in Europe and had the chance to explore many new places. I got to travel and practice digital photography by capturing different cities,
+            architecture, landscapes, and everyday moments. These photos and videos are some of my favorite
+            memories from the trip.
+        </p>
+    </header>
+
+    <section class="about-section">
+        <div class="about-text">
+            <h2>Why I Love It</h2>
+            <p>
+                Digital photography became one of my favorite creative interests because it lets me capture
+                places in a way that feels personal and meaningful. I especially enjoyed taking photos of streets, landmarks, and scenic views because each place had
+                such a different mood and aesthetic. Photography made me slow down and appreciate the details
+                around me.
+            </p>
+        </div>
+
+        <div class="featured-photo-box">
+            <img src="IMG_5691.JPG" alt="A sunny street view between tall buildings during summer travel" class="featured-photo" />
+        </div>
+    </section>
+
+    <section class="gallery-section">
+        <h2>My Favorite Travel Shots</h2>
+        <div class="photo-gallery">
+            <div class="photo-card">
+                <img src="IMG_6075.JPG" alt="The Eiffel Tower glowing at night" class="gallery-photo" />
+                <h3>Paris, France</h3>
+                <p>Paris felt very elegant and artistic, especially at night when everything was lit up.
+                    The Eiffel Tower stood out the most to me because of how detailed and structured it is, and photographing it made me focus on lighting and symmetry. 
+                    I liked capturing how the city combines history with a modern, lively atmosphere.</p>
+            </div>
+
+            <div class="photo-card">
+                <img src="IMG_6154.JPG" alt="A warm desert landscape with buildings and palm trees" class="gallery-photo" />
+                <h3>Marrakech, Morroco</h3>
+                <p>Marrakech had a completely different vibe compared to the other cities I visited. The warm colors and desert landscape. I liked how everything blended into natural tones.</p>
+            </div>
+
+            <div class="photo-card">
+                <img src="IMG_6523.JPG" alt="A rainy cityscape view with a river and large historic buildings" class="gallery-photo" />
+                <h3>London, England</h3>
+                <p>London had a more moody and calm atmosphere, especially with the rain and cloudy skies. 
+                    The weather actually made the photos more interesting because it added a soft, cinematic feel. 
+                    I enjoyed capturing the contrast between the historic buildings and the modern city around them.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="video-section">
+        <h2>Travel Video</h2>
+        <p>
+            I also took videos while traveling so I could capture movement and atmosphere in a different way.
+        </p>
+        <video controls class="travel-video">
+            <source src="MVI_6065.mov" type="video/quicktime" />
+            Your browser does not support the video tag.
+        </video>
+    </section>
+
+    <section class="form-section">
+        <h2>Photography Favorites Form</h2>
+        <form action="#" method="post" class="photo-form">
+            <label for="place">What kind of place would you most want to photograph?</label>
+            <input type="text" id="place" name="place" placeholder="City, beach, mountains, etc." required />
+
+            <p>What photography style do you like most?</p>
+
+            <input type="radio" id="architecture" name="style" value="architecture" />
+            <label for="architecture">Architecture</label><br />
+
+            <input type="radio" id="landscape" name="style" value="landscape" />
+            <label for="landscape">Landscape</label><br />
+
+            <input type="radio" id="street" name="style" value="street" />
+            <label for="street">Street Photography</label><br />
+
+            <input type="radio" id="portraits" name="style" value="portraits" />
+            <label for="portraits">Portraits</label><br /><br />
+
+            <label for="editing">Do you enjoy editing photos?</label>
+            <select id="editing" name="editing">
+                <option value="yes">Yes</option>
+                <option value="sometimes">Sometimes</option>
+                <option value="no">No</option>
+            </select>
+
+            <br /><br />
+
+            <input type="submit" value="Submit" class="submit-button" />
+        </form>
+    </section>
+</body>
+</html>
